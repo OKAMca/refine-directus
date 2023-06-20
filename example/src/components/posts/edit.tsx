@@ -2,7 +2,7 @@ import { useForm, useSelect, Edit } from "@refinedev/antd";
 import { RcFile } from "antd/lib/upload/interface";
 import { Form, Input, Select, Upload } from "antd";
 import { useApiUrl, useDataProvider } from "@refinedev/core";
-import { getValueProps, MediaConfig, mediaUploadMapper, useDirectusUpload } from "@tspvivek/refine-directus";
+import { getValueProps, MediaConfig, mediaUploadMapper, useDirectusUpload } from "@okam/refine-directus";
 import { directusClient } from "src/directusClient";
 import { IPost } from "src/interfaces";
 

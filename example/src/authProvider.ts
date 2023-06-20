@@ -1,5 +1,5 @@
 import { LegacyAuthProvider as AuthProvider, useLogout } from "@refinedev/core";
-import { AuthHelper } from '@tspvivek/refine-directus';
+import { AuthHelper } from '@okam/refine-directus';
 import { directusClient } from './directusClient';
 
 const directusAuthHelper = AuthHelper(directusClient);

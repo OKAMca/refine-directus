@@ -3,7 +3,7 @@ import { AppProps } from 'next/app';
 
 import { Refine } from "@refinedev/core";
 import { notificationProvider, LoginPage, Layout, ErrorComponent } from "@refinedev/antd";
-import { dataProvider } from '@tspvivek/refine-directus';
+import { dataProvider } from '@okam/refine-directus';
 import routerProvider from "@refinedev/nextjs-router/legacy";
 import "@refinedev/antd/dist/reset.css";
 

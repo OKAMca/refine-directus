@@ -1,7 +1,7 @@
 export { NextRouteComponent as default } from "@refinedev/nextjs-router/legacy";
 
 import { checkAuthentication } from "@refinedev/nextjs-router/legacy";
-import { dataProvider } from "@tspvivek/refine-directus";
+import { dataProvider } from "@okam/refine-directus";
 
 
 import { GetServerSideProps } from "next";

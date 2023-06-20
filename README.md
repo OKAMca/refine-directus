@@ -12,7 +12,7 @@ For more detailed information and usage, refer to the [refine data provider docu
 ## Install
 
 ```
-npm install @tspvivek/refine-directus
+npm install @okam/refine-directus
 ```
 
 ## Example
