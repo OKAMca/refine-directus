@@ -8,13 +8,13 @@
         "start:prod": "next start",
         "lint": "eslint '**/*.{js,jsx,ts,tsx}'"
     },
-
     "dependencies": {
-        "@pankod/refine-antd": "^4.7.3",
-        "@pankod/refine-core": "^3.99.4",
-        "@pankod/refine-cli": "^1.17.0",
-        "@pankod/refine-nextjs-router": "^4.3.0",
+        "@refinedev/antd": "latest",
+        "@refinedev/cli": "latest",
+        "@refinedev/core": "latest",
+        "@refinedev/nextjs-router": "latest",
         "@tspvivek/refine-directus": "^1.0.18",
+        "antd": "^5.0.5",
         "next": "^13.0.6",
         "react": "^18.0.0",
         "react-dom": "^18.0.0"
