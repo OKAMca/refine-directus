@@ -1,13 +1,6 @@
-import {
-    useForm,
-    useSelect,
-    Create,
-    Form,
-    Select,
-    Input,
-    Upload,
-} from "@pankod/refine-antd";
-import { useApiUrl } from "@pankod/refine-core";
+import { useForm, useSelect, Create } from "@refinedev/antd";
+import { Form, Select, Input, Upload } from "antd";
+import { useApiUrl } from "@refinedev/core";
 import { directusClient } from "src/directusClient";
 import { IPost } from "src/interfaces";
 import { getValueProps, MediaConfig, mediaUploadMapper, useDirectusUpload } from "@tspvivek/refine-directus";
@@ -19,7 +12,11 @@ export const PostCreate: React.FC = () => {
     const { selectProps: categorySelectProps } = useSelect<IPost>({
         resource: "categories",
         optionLabel: "name",
-        optionValue: "id"
+        optionValue: "id",
+
+        pagination: {
+            mode: "server"
+        }
     });
 
     //List of media field and their config

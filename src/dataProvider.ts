@@ -5,7 +5,7 @@ import {
     CrudSorting,
     DataProvider,
     LogicalFilter,
-} from "@pankod/refine-core";
+} from "@refinedev/core";
 
 const operators = {
     eq: "_eq",

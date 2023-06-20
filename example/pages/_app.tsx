@@ -1,11 +1,11 @@
 import React from 'react';
 import { AppProps } from 'next/app';
 
-import { Refine } from '@pankod/refine-core';
-import { notificationProvider, LoginPage, Layout, ErrorComponent } from '@pankod/refine-antd';
+import { Refine } from "@refinedev/core";
+import { notificationProvider, LoginPage, Layout, ErrorComponent } from "@refinedev/antd";
 import { dataProvider } from '@tspvivek/refine-directus';
-import routerProvider from '@pankod/refine-nextjs-router';
-import "@pankod/refine-antd/dist/reset.css";
+import routerProvider from "@refinedev/nextjs-router/legacy";
+import "@refinedev/antd/dist/reset.css";
 
 import "@styles/global.css";
 
@@ -16,9 +16,9 @@ import { PostList, PostCreate, PostEdit, PostShow } from '@components';
 
 function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 	return (
-		<Refine
-			routerProvider={routerProvider}
-			authProvider={authProvider}
+        <Refine
+			legacyRouterProvider={routerProvider}
+			legacyAuthProvider={authProvider}
 			dataProvider={dataProvider(directusClient)}
 			resources={[
 				{
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }: AppProps): JSX.Element {
 		>
 			<Component {...pageProps} />
 		</Refine>
-	);
+    );
 }
 
 export default MyApp;

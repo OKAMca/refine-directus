@@ -1,11 +1,11 @@
 {
-    "name": "@tspvivek/refine-directus",
+    "name": "@okam/refine-directus",
     "description": "Refine Directus REST data provider. This is a wrapper around the Directus SDK to use in refine.",
     "version": "1.0.19",
     "license": "MIT",
     "main": "dist/index.js",
     "typings": "dist/index.d.ts",
-    "repository": "git://github.com/tspvivek/refine-directus.git",
+    "repository": "git://github.com/OKAMca/refine-directus.git",
     "private": false,
     "files": [
         "dist",
@@ -47,8 +47,11 @@
     },
     "dependencies": {
         "@directus/sdk": "^10.3.1",
-        "@pankod/refine-core": "^3.99.4",
-        "@types/react": "^18.0.0"
+        "@refinedev/antd": "latest",
+        "@refinedev/core": "latest",
+        "@refinedev/nextjs-router": "latest",
+        "@types/react": "^18.0.0",
+        "antd": "^5.0.5"
     },
     "gitHead": "829f5a516f98c06f666d6be3e6e6099c75c07719",
     "publishConfig": {

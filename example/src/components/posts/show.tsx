@@ -1,5 +1,6 @@
-import { useOne, useShow } from "@pankod/refine-core";
-import { Show, Typography, Tag } from "@pankod/refine-antd";
+import { useOne, useShow } from "@refinedev/core";
+import { Show } from "@refinedev/antd";
+import { Typography, Tag } from "antd";
 import { ICategory } from "src/interfaces";
 
 const { Title, Text } = Typography;
